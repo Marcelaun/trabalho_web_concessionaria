@@ -4,62 +4,123 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teste three.js</title>
+  <title>MVG MultiMarcas</title>
   <link href="/dist/output.css" rel="stylesheet">
+
 </head>
-<body class="bg-gray-800">
 
-  <header class="w-full ">
-    <nav class="bg-zinc-900 py-2 shadow-2xl rounded-b-sm mx-px">
+<body class="bg-zinc-800">
+
+<header class="w-full dark:bg-slate-800"> <!-- Barra de navegação-->
+    <nav class="bg-white py-2 shadow-2xl border border-neutral-200 border-r-2">
       <div class="container flex items-center">
-        <img src="../src/assets/Logo_clara.svg" alt="logo" class=" w-40 ml-12 mx-auto">
-        <ul class="container flex justify-center ml-5 items-center">
-          <li><a class="text-red-600 font-bold hover:bg-neutral-200 px-3 drop-shadow-2xl py-px rounded-lg" href="carro.html">Home</a></li>
-          <li><a class="text-red-600 font-bold hover:bg-neutral-200 px-3 drop-shadow-2xl py-px rounded-lg" href="#Carros">Carros</a></li>
-          <li><a class="text-red-600 font-bold hover:bg-neutral-200 px-3 drop-shadow-2xl py-px rounded-lg" href="#Motos">Motos</a></li>
-          <li><a class="text-red-600 font-bold hover:bg-neutral-200 px-3 drop-shadow-2xl py-px rounded-lg" href="#Contato">Contato</a></li>
-        </ul>
-        <form>
-          <button class="bg-gray-500 flex text-black px-4 rounded-xl mr-10 hover:bg-neutral-200">Entrar</button>
-      </form>
+        <img src="./assets/Logo_1.svg " alt="logo" class=" w-40 ml-12 mx-auto">
+          <ul class="container flex justify-center ml-5 items-center">
+            <li> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-500">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg></li>
+            <li><a class="text-red-500 transition hover:opacity-70 px-3 drop-shadow-2xl py-px" href="carro.html">HOME</a></li>
+            <li></li>
+            <li><a class="text-red-500  hover:opacity-70 px-3 drop-shadow-2xl py-px" href="#Carros">CARROS</a></li>
+            <li><a class="text-red-500  hover:opacity-70 px-3 drop-shadow-2xl py-px" href="#Motos">MOTOS</a></li>
+            <li><a class="text-red-500  hover:opacity-70 px-3 drop-shadow-2xl py-px" href="#Contato">CONTATO</a></li>
+          </ul>
+          <div class="border-l-1 border-black">
+            <form class="flex-col">
+              <button class="bg-red-600 text-white px-4 rounded hover:opacity-70">Entrar</button>
+              <button class="bg-red-600 text-white px-4 rounded items-center mt-2 hover:opacity-70">Cadastrar</button>
+          </form>
+        </div>
       </div>
-  </nav>
+    </nav>
+</header>
 
-    <!-- <nav class="bg-white w-full flex items-center justify-between p-4 border-b">
-      <img class="mx-6 w-44" src="assets/Logo_1.svg" alt="MVG Multimarcas">
-      <ul class="flex gap-4 text-red-600 ">
-        <li><a class="transition ease-in-out delay-50 hover:opacity-70" href="#">HOME</a></li>
-        <li><a class="transition ease-in-out delay-50 hover:opacity-70" href="#">SOBRE</a></li>
-        <li><a class="transition ease-in-out delay-50 hover:opacity-70" href="#">CONTATO</a></li>
-      </ul>
-    </nav> -->
-  </header>
+<main>
+    <img src="./assets/banner_strada.jpg" alt="">
+   
+     <div> <!-- Barra de pesquisa -->
+      <div class="container flex mx-auto items-center justify-end rounded-xl bg-white mt-10 w-100 h-40 p-10" style="width: 50rem;">
+        <h1 class="text-center mx-5">PESQUISAR</h1>
+          <form action="Pesquisa" class="text-center flex ">
+            <input class="w-98 rounded-xl text-center border-2" style="outline:none; width: 24rem;" type="search" name="Pesquisar" id="Pesquisar" placeholder="Digite a marca ou modelo do carro">
+              <button class="bg-red-600 px-2 mx-10 rounded-xl hover:bg-white ">VER OFERTAS</button>
+          </form>
+      </div>
+    </div>
+
+      <div >
+          <div class="container mx-auto px-14 py-10 rounded-lg bg-red-600 bg-opacity-70 mt-4">
+              <div class="flex">             
+                <div class="flex-grow-1">
+                  <div class="text-bold text-2xl text-white font-medium"><h1>MVG MULTIMARCAS</h1></div>
+                  <div class="text-bold text-white">"Concessionária oferece atendimento de qualidade e veículos usados confiáveis,<br>
+                  Oferecemos opções atrativas de pagamento e uma ampla seleção de carros novos e usados.<br> Venha conhecer nossa loja!"
+                  </div>
+              </div>
+          </div>
+          <div class="ml-auto w-96">
+            <img src="./assets/mercedes.webp" alt="Polo" class="rounded-xl mr-5" >
+          </div>
+
+          <div class="flex">
+
+            <button class=" bg-zinc-800 px-8 bg-opacity-60 text-white rounded-lg">ENTRE EM CONTATO</button>
+
+          </div>
+      </div>
+
+
+</main>
 
   <section>
     <div class="w-full">
-      <h1>Carro</h1>
 
-      <div class="flex-row gap-8 items-center content-center text-red-700 p-10 text-center">
-        <h2>Lista de carros:</h2>
-        
-        <div class="flex-column justify-center items-center p-8 bg-white w-80 rounded-lg">
-          <img class="w-80 rounded-lg" src="./assets/polo.jpg" alt="VW-Polo">
-          <h2 class="mb-3 mt-3">VW Polo</h2>
-          <a class="p-2 bg-red-600 text-white m-5 rounded-lg transition ease-in-out delay-50 hover:opacity-70 link-cars" href="./pages/car04.html">Ver Carro em 3D</a>
+      <div class="flex-row gap-8 items-center justify-center content-center text-red-700 p-10 text-center">
+        <h2 class="bg-white bg-opacity-40 rounded-lg font-bold">Lista de carros:</h2>
+      
+        <div class="flex mt-10 flex-wrap gap-6 w-full justify-center">
+          <div class="flex-column p-8 bg-white w-80 rounded-lg">
+            <img class="w-80 rounded-lg" src="./assets/polo.jpg" alt="Mercede-Benz">
+            <h2 class="mb-3 mt-3">VW Polo GTI</h2>
+            <a class="p-2 bg-red-600 text-white m-5 rounded-lg transition ease-in-out delay-50 hover:opacity-70 link-cars" href="./pages/car04.html">Ver Carro</a>
+  
+          </div>
+          
+          <div class="flex-column justify-center items-center p-8 bg-white w-80 rounded-lg">
+              <img class="w-80 rounded-lg" src="./assets/14-prius-1.jpg" alt="Ford Ranger">
+              <h2 class="mb-3 mt-3">Toyota Prius</h2>
+              <a class="p-2 bg-red-600 text-white m-5 rounded-lg transition ease-in-out delay-50 hover:opacity-70 link-cars" href="./pages/car02.html">Ver Carro</a>
+  
+          </div>
+
+          <div class="flex-column justify-center items-center p-8 bg-white w-80 rounded-lg">
+            <img class="w-80 rounded-lg" src="./assets/audi_rs4.jpg" alt="Audi">
+            <h2 class="mb-3 mt-3">Audi RS4</h2>
+            <a class="p-2 bg-red-600 text-white m-5 rounded-lg transition ease-in-out delay-50 hover:opacity-70 link-cars" href="./pages/car03.html">Ver Carro</a>
+          </div>
+
+          <div class="flex-column justify-center items-center p-8 bg-white w-80 rounded-lg">
+            <img class="w-80 rounded-lg" src="./assets/fusca_tsi.jpeg" alt="Fusca TSI">
+            <h2 class="mb-3 mt-3">VW Fusca TSI</h2>
+            <a class="p-2 bg-red-600 text-white m-5 rounded-lg transition ease-in-out delay-50 hover:opacity-70 link-cars" href="./pages/car01.html">Ver Carro</a>
 
         </div>
 
         <div class="flex-column justify-center items-center p-8 bg-white w-80 rounded-lg">
-          <img class="w-80 rounded-lg" src="./assets/prius.jpg" alt="VW-Polo">
-          <h2 class="mb-3 mt-3">Toyota Prius</h2>
-          <a class="p-2 bg-red-600 text-white m-5 rounded-lg transition ease-in-out delay-50 hover:opacity-70 link-cars" href="./pages/car04.html">Ver Carro em 3D</a>
-  
+          <img class="w-80 rounded-lg" src="./assets/range_rover3.jpg" alt="Subaru Forester">
+          <h2 class="mb-3 mt-3">Range Rover </h2>
+          <a class="p-2 bg-red-600 text-white m-5 rounded-lg transition ease-in-out delay-50 hover:opacity-70 link-cars" href="./pages/car05.html">Ver Carro</a>
+
       </div>
-      
-     </div>
-      
+        </div>
+        </div>
+      </div>
     </div>
   </section>
+  <footer class="bg-white bg-opacity-25">
+
+    &copy;Copyright MVG MultiMarcas 
+  </footer>
 
 
   

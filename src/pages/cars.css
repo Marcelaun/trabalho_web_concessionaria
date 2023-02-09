@@ -1,0 +1,161 @@
+
+
+
+
+.main-section {
+  padding: 2rem;
+}
+
+.container-slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 65vh;
+  gap: 2rem;
+}
+
+.container-images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45rem;
+}
+
+.slider {
+  opacity: 0;
+  transition: opacity .2s;
+  position: absolute;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.on {
+  opacity: 1;
+}
+
+#prev-button, #next-button {
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#prev-button img, #next-button img {
+  margin: 0;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.car-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.car-details {
+  border: 1px solid #d6d6d6;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.car-video {
+  width: 50rem;
+}
+
+.car-video-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+
+}
+
+.car-general-info {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.price {
+  color: #424242;
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+.decision-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 6rem;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.vantagens, .desvantagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px #d6d6d6;
+  text-align: center;
+}
+
+.decision-title {
+  font-size: 2rem;
+  font-weight: 500;
+  
+}
+
+#desavantages-text {
+  color: #9c3c3c;
+}
+
+#advantages-text {
+  color: #418144;
+}
+
+.adv-text, .dsv-text {
+  color: #707070;
+  font-weight: 700;
+  
+  border-radius: 6px;
+  padding: 1.5rem;
+}
+
+.adv-text {
+  border: 1px solid #76ff7d;
+}
+
+.dsv-text {
+  border: 1px solid #ff7676;
+}
+
+
+.advantages-list, .disavantages-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.details-text {
+  color: #3b3b3b;
+}
